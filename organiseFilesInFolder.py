@@ -28,7 +28,7 @@ FILE_FORMATS = {file_format: directory
                 for directory, file_formats in DIRECTORIES.items()
                 for file_format in file_formats}
 # This will organise your files
-def organize():
+def organise():
     for entry in os.scandir():
         if entry.is_dir():
             continue
