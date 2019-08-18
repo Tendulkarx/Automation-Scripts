@@ -52,4 +52,4 @@ def organise():
         except:
             pass
 if __name__ == "__main__":
-    organize()
+    organise()
