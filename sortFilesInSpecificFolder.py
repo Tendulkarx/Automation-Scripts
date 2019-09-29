@@ -20,6 +20,7 @@ DIRECTORIES = {
     "PLAIN TEXT": [".txt", ".in", ".out"],
     "PDF": [".pdf"],
     "PYTHON": [".py"],
+    "DEVOLOPMENT SCRIPT": [".js"],
     "SAS PROGRAMS": [".sas"],
     "SQL SCRIPTS": [".sql"],
     "JSON": [".json"],
