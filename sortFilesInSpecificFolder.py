@@ -62,6 +62,6 @@ def organise():
             pass
 if __name__ == "__main__":
 	# change the current working directory
-    currentWorkingFolder = '/Users/sukobl/Downloads'
+    currentWorkingFolder = '/Users/oneilblake/Downloads'
     os.chdir(currentWorkingFolder)
     organise()
