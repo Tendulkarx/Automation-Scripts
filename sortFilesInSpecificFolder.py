@@ -29,7 +29,6 @@ DIRECTORIES = {
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
     "AODBE": [".xd",".psd",".ai"]
-
 }
 
 FILE_FORMATS = {file_format: directory
@@ -53,6 +52,7 @@ def organise():
         pass
     for dir in os.scandir():
         try:
+            # Delete empty folders
             if dir.is_dir():
                 os.rmdir(dir)
             else:

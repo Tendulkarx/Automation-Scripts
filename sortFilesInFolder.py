@@ -5,23 +5,29 @@ from pathlib import Path
 DIRECTORIES = {
     "HTML": [".html5", ".html", ".htm", ".xhtml"],
     "IMAGES": [".jpeg", ".jpg", ".tiff", ".gif", ".bmp", ".png", ".bpg", "svg",
-               ".heif", ".psd"],
+               ".heif"],
     "VIDEOS": [".avi", ".flv", ".wmv", ".mov", ".mp4", ".webm", ".vob", ".mng",
                ".qt", ".mpg", ".mpeg", ".3gp", ".mkv"],
     "DOCUMENTS": [".oxps", ".epub", ".pages", ".docx", ".doc", ".fdf", ".ods",
                   ".odt", ".pwi", ".xsn", ".xps", ".dotx", ".docm", ".dox",
                   ".rvg", ".rtf", ".rtfd", ".wpd", ".xls", ".xlsx", ".ppt",
-                  "pptx"],
+                  ".pptx"],
     "ARCHIVES": [".a", ".ar", ".cpio", ".iso", ".tar", ".gz", ".rz", ".7z",
                  ".dmg", ".rar", ".xar", ".zip"],
     "AUDIO": [".aac", ".aa", ".aac", ".dvf", ".m4a", ".m4b", ".m4p", ".mp3",
               ".msv", "ogg", "oga", ".raw", ".vox", ".wav", ".wma"],
-    "PLAINTEXT": [".txt", ".in", ".out"],
+    "PLAIN TEXT": [".txt", ".in", ".out"],
     "PDF": [".pdf"],
     "PYTHON": [".py"],
+    "SAS PROGRAMS": [".sas"],
+    "SQL SCRIPTS": [".sql"],
+    "JSON": [".json"],
+    "LOGS": [".log"],
     "XML": [".xml"],
     "EXE": [".exe"],
-    "SHELL": [".sh"]
+    "SHELL": [".sh"],
+    "CITRIX CONNECTION": [".ica"],
+    "AODBE": [".xd", ".psd", ".ai"]
 }
 
 FILE_FORMATS = {file_format: directory
@@ -45,6 +51,7 @@ def organise():
         pass
     for dir in os.scandir():
         try:
+             # Delete empty folders
             if dir.is_dir():
                 os.rmdir(dir)
             else:
