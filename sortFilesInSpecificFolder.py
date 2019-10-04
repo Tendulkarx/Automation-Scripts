@@ -20,6 +20,7 @@ DIRECTORIES = {
     "PLAIN TEXT": [".txt", ".in", ".out"],
     "PDF": [".pdf"],
     "PYTHON": [".py"],
+    "DEVOLOPMENT SCRIPT": [".js"],
     "SAS PROGRAMS": [".sas"],
     "SQL SCRIPTS": [".sql"],
     "JSON": [".json"],
@@ -61,6 +62,6 @@ def organise():
             pass
 if __name__ == "__main__":
 	# change the current working directory
-    currentWorkingFolder = '/Users/sukobl/Downloads'
+    currentWorkingFolder = '/Users/oneilblake/Downloads'
     os.chdir(currentWorkingFolder)
     organise()
