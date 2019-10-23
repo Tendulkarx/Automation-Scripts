@@ -45,7 +45,9 @@ def organise():
         if file_format in FILE_FORMATS:
             directory_path = Path(FILE_FORMATS[file_format])
             directory_path.mkdir(exist_ok=True)
-            file_path.rename(directory_path.joinpath(file_path))
+            # file_path.rename(directory_path.joinpath(file_path))
+            # changed to REPLACE method so if the file already exist in the folder the it silently overwrites it.
+            file_path.replace(directory_path.joinpath(file_path))
    # If extension not found within the dictionary than create a folder name  called "OTHER-FILES"
     try:
         os.mkdir('OTHER')
