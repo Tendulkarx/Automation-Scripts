@@ -29,7 +29,8 @@ DIRECTORIES = {
     "EXE": [".exe"],
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
-    "AODBE": [".xd",".psd",".ai"]
+    "AODBE": [".xd", ".psd", ".ai"],
+    "OUTLOOK MESSAGES": [".msg"]
 }
 
 FILE_FORMATS = {file_format: directory
