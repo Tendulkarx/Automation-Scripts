@@ -8,3 +8,8 @@ A list of useful Python scripts to help automate things.
 3.|[mergeAllPDFInFolder](https://github.com/Tendulkarx/Automation-Scripts/blob/master/mergeAllPDFInFolder.py)| Merge all PDF files found within a folder into one PDF file.
 4.|[mergeListedPDF](https://github.com/Tendulkarx/Automation-Scripts/blob/master/mergeListedPDF.py)| Merge a specified list of PDF files into one PDF file.
 5.|[extractFromJsonObjects](https://github.com/Tendulkarx/Automation-Scripts/blob/master/extractFromJsonObjects.py)| Find value for a key within a Json Object.
+6.|[replaceFileNameDelimiter](https://github.com/Tendulkarx/Automation-Scripts/blob/master/replaceFileNameDelimiter.py)| Replace delimiter in file name.
+
+
+
+replaceFileNameDelimiter.py
