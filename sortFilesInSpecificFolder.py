@@ -30,6 +30,7 @@ DIRECTORIES = {
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
     "AODBE": [".xd", ".psd", ".ai"],
+    "MAC APPS": [".app"],
     "OUTLOOK MESSAGES": [".msg"]
 }
 
