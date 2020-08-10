@@ -1,5 +1,6 @@
 # importing libraries used within the program
 import os
+import shutil
 from pathlib import Path
 
 # Dictionary (Add more where the files type you want isn't in the DIRECTORIES)
@@ -12,7 +13,7 @@ DIRECTORIES = {
     "DOCUMENTS": [".oxps", ".epub", ".pages", ".docx", ".doc", ".fdf", ".ods",
                   ".odt", ".pwi", ".xsn", ".xps", ".dotx", ".docm", ".dox",
                   ".rvg", ".rtf", ".rtfd", ".wpd", ".xls", ".xlsx", ".ppt",
-                  ".pptx"],
+                  ".pptx", ".csv"],
     "ARCHIVES": [".a", ".ar", ".cpio", ".iso", ".tar", ".gz", ".rz", ".7z",
                  ".dmg", ".rar", ".xar", ".zip"],
     "AUDIO": [".aac", ".aa", ".aac", ".dvf", ".m4a", ".m4b", ".m4p", ".mp3",
@@ -30,7 +31,7 @@ DIRECTORIES = {
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
     "AODBE": [".xd", ".psd", ".ai"],
-    "MAC APPS": [".app"],
+    "MAC APPS": [".app", ".pkg"],
     "OUTLOOK MESSAGES": [".msg"]
 }
 
@@ -50,9 +51,11 @@ def organise():
             # file_path.rename(directory_path.joinpath(file_path))
             # changed to REPLACE method so if the file already exist in the folder the it silently overwrites it.
             file_path.replace(directory_path.joinpath(file_path))
+
    # If extension not found within the dictionary than create a folder name  called "OTHER-FILES"
     try:
         os.mkdir('OTHER')
+        os.mkdir('FOLDERS')
     except:
         pass
     for dir in os.scandir():
@@ -64,6 +67,14 @@ def organise():
                 os.rename(os.getcwd() + '/' + str(Path(dir)), os.getcwd() + '/OTHER/' + str(Path(dir)))
         except:
             pass
+
+    # Move folders with contents to OTHER folder
+    for directory in os.scandir():
+            directoryName = directory.name
+            if directoryName not in DIRECTORIES.keys():
+                if directoryName not in ['/OTHER','/FOLDERS']:
+                    shutil.move(directoryName, 'FOLDERS')
+
 if __name__ == "__main__":
 	# change the current working directory
     currentWorkingFolder = '/Users/sukobl/Downloads'
