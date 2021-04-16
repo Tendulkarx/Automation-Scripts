@@ -30,6 +30,7 @@ DIRECTORIES = {
     "EXE": [".exe"],
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
+    "REMOTE CONNECTION": [".rdp"],
     "AODBE": [".xd", ".psd", ".ai"],
     "MAC APPS": [".app", ".pkg"],
     "OUTLOOK MESSAGES": [".msg"]
@@ -72,9 +73,9 @@ def organise():
     for directory in os.scandir():
             directoryName = directory.name
             if directoryName not in DIRECTORIES.keys():
-                if directoryName not in ['/OTHER','/FOLDERS']:
+                if directoryName not in ['OTHER','FOLDERS']:
                     shutil.move(directoryName, 'FOLDERS')
-
+    print('All files and folders are now sorted')
 if __name__ == "__main__":
 	# change the current working directory
     currentWorkingFolder = '/Users/sukobl/Downloads'
