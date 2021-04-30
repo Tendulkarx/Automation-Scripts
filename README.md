@@ -9,7 +9,7 @@ A list of useful Python scripts to help automate things.
 4.|[mergeListedPDF](https://github.com/Tendulkarx/Automation-Scripts/blob/master/mergeListedPDF.py)| Merge a specified list of PDF files into one PDF file.
 5.|[extractFromJsonObjects](https://github.com/Tendulkarx/Automation-Scripts/blob/master/extractFromJsonObjects.py)| Find value for a key within a Json Object.
 6.|[replaceFileNameDelimiter](https://github.com/Tendulkarx/Automation-Scripts/blob/master/replaceFileNameDelimiter.py)| Replace delimiter in file name.
+7.|[priceTracker](https://github.com/Tendulkarx/Automation-Scripts/blob/master/price_tracker.py)| Price tracker.
+8.|[sendEmail](https://github.com/Tendulkarx/Automation-Scripts/blob/master/send_email.py)| Sending email.
 
 
-
-replaceFileNameDelimiter.py

@@ -1,6 +1,8 @@
 import os
 
-directory = '/Users/sukobl/Downloads/Temp'
+home = os.path.expanduser('~')
+directory = os.path.join(home, 'Downloads/Temp')
+print(directory)
 # improve later to take a list of delimiter types
 currentDelimiter = ' '
 newDelimiter = '_'
