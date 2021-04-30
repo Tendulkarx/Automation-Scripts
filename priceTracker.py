@@ -2,7 +2,7 @@ import os
 import requests
 import unicodedata
 from bs4 import BeautifulSoup
-from send_email import send_email
+from sendEmail import send_email
 
 HEADERS = ({'User-Agent':
               'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
