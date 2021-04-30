@@ -96,5 +96,4 @@ if __name__ == '__main__':
                 </body>
               </html>
               """.format(title=' '.join(title.split()[:15]), price=price, url=url)
-                # .format(title=' '.join(title.split()[:15]), price=price, url=url)
     send_email(username, [username], 'Notified', message)
