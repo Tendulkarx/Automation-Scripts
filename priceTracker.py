@@ -43,6 +43,8 @@ if __name__ == '__main__':
   product_4 = "https://www.amazon.co.uk/iFixit-precision-screwdriver-compatible-smartphone/dp/B0189YWOIO/ref=sr_1_5?crid=1K3X503IFJ99Q&dchild=1&keywords=ifixit&qid=1619461147&sprefix=ifi%2Caps%2C191&sr=8-5"
   product_5 = "https://www.amazon.co.uk/iFixit-Aluminum-Precision-MacBook-Smartphone/dp/B07BMM74FD/ref=sr_1_8?crid=1K3X503IFJ99Q&dchild=1&keywords=ifixit&qid=1619461147&sprefix=ifi%2Caps%2C191&sr=8-8"
 
+
+
   # List of products and price limits
   products = [(product_1, 26), (product_2, 115), (product_3, 325), (product_4, 30), (product_5, 60)]
 
