@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
 
   # List of products and price limits
-  products = [(product_1, 26), (product_2, 115), (product_3, 325), (product_4, 30), (product_5, 60)]
+  products = [(product_1, 26), (product_2, 115), (product_3, 325), (product_4, 30), (product_5, 55)]
 
   products_below_limit = []
   for product_url, limit in products:
