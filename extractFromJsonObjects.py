@@ -25,6 +25,7 @@ def extract_values(obj, key):
     results = extract(obj, arr, key)
     return results
 
+
 # getting the value for the key 'message' within the Json object.
 result = extract_values(res, 'message')
 print(result)
