@@ -21,7 +21,7 @@ DIRECTORIES = {
     "PLAIN TEXT": [".txt", ".in", ".out"],
     "PDF": [".pdf"],
     "PYTHON": [".py"],
-    "DEVOLOPMENT SCRIPT": [".js"],
+    "DEVELOPMENT SCRIPT": [".js"],
     "SAS PROGRAMS": [".sas"],
     "SQL SCRIPTS": [".sql"],
     "JSON": [".json"],
@@ -31,7 +31,7 @@ DIRECTORIES = {
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
     "REMOTE CONNECTION": [".rdp"],
-    "AODBE": [".xd", ".psd", ".ai"],
+    "ADOBE": [".xd", ".psd", ".ai"],
     "MAC APPS": [".app", ".pkg"],
     "OUTLOOK MESSAGES": [".msg"]
 }

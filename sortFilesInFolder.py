@@ -11,7 +11,7 @@ DIRECTORIES = {
     "DOCUMENTS": [".oxps", ".epub", ".pages", ".docx", ".doc", ".fdf", ".ods",
                   ".odt", ".pwi", ".xsn", ".xps", ".dotx", ".docm", ".dox",
                   ".rvg", ".rtf", ".rtfd", ".wpd", ".xls", ".xlsx", ".ppt",
-                  ".pptx"],
+                  ".pptx", ".csv"],
     "ARCHIVES": [".a", ".ar", ".cpio", ".iso", ".tar", ".gz", ".rz", ".7z",
                  ".dmg", ".rar", ".xar", ".zip"],
     "AUDIO": [".aac", ".aa", ".aac", ".dvf", ".m4a", ".m4b", ".m4p", ".mp3",
@@ -19,6 +19,7 @@ DIRECTORIES = {
     "PLAIN TEXT": [".txt", ".in", ".out"],
     "PDF": [".pdf"],
     "PYTHON": [".py"],
+    "DEVELOPMENT SCRIPT": [".js"],
     "SAS PROGRAMS": [".sas"],
     "SQL SCRIPTS": [".sql"],
     "JSON": [".json"],
@@ -27,7 +28,10 @@ DIRECTORIES = {
     "EXE": [".exe"],
     "SHELL": [".sh"],
     "CITRIX CONNECTION": [".ica"],
-    "AODBE": [".xd", ".psd", ".ai"]
+    "REMOTE CONNECTION": [".rdp"],
+    "ADOBE": [".xd", ".psd", ".ai"],
+    "MAC APPS": [".app", ".pkg"],
+    "OUTLOOK MESSAGES": [".msg"]
 }
 
 FILE_FORMATS = {file_format: directory
