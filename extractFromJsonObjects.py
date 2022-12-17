@@ -1,7 +1,7 @@
 import requests
 
 # Your API here
-r = requests.get('https://api.github.com', auth=('user', 'pass'))
+r = requests.get("https://api.github.com", auth=("user", "pass"))
 res = r.json()
 
 
@@ -27,5 +27,5 @@ def extract_values(obj, key):
 
 
 # getting the value for the key 'message' within the Json object.
-result = extract_values(res, 'message')
+result = extract_values(res, "message")
 print(result)
